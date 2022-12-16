@@ -46,13 +46,27 @@ public class Calculator {
         // или просто return Math.sqrt(number);
     }
 
-    // Нужно написать в калькуляторе метод вычисления суммы покупки со скидкой и проверить его, используя AssertJ
+    // Задание №1 Нужно написать в калькуляторе метод вычисления суммы покупки со скидкой и проверить его, используя AssertJ
     // Примерная сигнатура и тело метода:
+    //Метод вычисления суммы покупки (метод принимает сумму, процент скидки и возвращает сумму со скидкой)
     public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
-        double total_sum;
-        total_sum=purchaseAmount/100*discountAmount;
         // purchaseAmount - сумма покупки
         // discountAmount - размер скидки
-        return total_sum; // Метод должен возвращать сумму покупки со скидкой
+        double total_sum = 0; // сумма со скидкой
+        if (purchaseAmount >= 0) {
+
+            if (discountAmount >= 0 && discountAmount <= 100) {
+                total_sum = purchaseAmount - (purchaseAmount * discountAmount) / 100;
+            } else {
+                throw new ArithmeticException("Скидка должна быть от 0 до 100%");
+            }
+        } else {
+            throw new ArithmeticException("Скидка не может быть отрицательной");
+        }
+
+
+        return total_sum;
+
+
     }
 }

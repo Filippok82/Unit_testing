@@ -21,8 +21,11 @@ public class Product implements Comparable<Product> {
 
     public void setTitle(String title) {
         this.title = title;
+
     }
-    //public int compareTo(Product product){
-        //return this.getCost().compareTo(product.getCost());
+
+    public int compareTo(Product product){
+        return this.getCost().compareTo(product.getCost());
+
     }
-//}
+}

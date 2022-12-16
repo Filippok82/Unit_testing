@@ -1,8 +1,10 @@
 package seminars.first.hw;
 
-import java.util.List;
+import java.util.*;
+
 
 public class Shop {
+
     private List<Product> products;
 
     // Геттеры, сеттеры:
@@ -10,18 +12,20 @@ public class Shop {
         return products;
     }
 
+
     public void setProducts(List<Product> products) {
         this.products = products;
+
     }
 
     // Метод должен вернуть отсортированный по возрастанию по цене список продуктов
     public List<Product> getSortedListProducts() {
-        return null;
+        Collections.sort(products);
+        return products;
     }
 
     // Метод должен вернуть самый дорогой продукт
     public Product getMostExpensiveProduct() {
-        // ...
-        return null;
+        return getSortedListProducts().get(products.size()-1);
     }
 }
