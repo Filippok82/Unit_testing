@@ -52,7 +52,7 @@ public class ShopTest {
         for (Product product : testShop.getSortedListProducts()) {
             System.out.println(product.getTitle() + "-" + product.getCost());
         }
-
+        System.out.println(getTestListProducts());
     }
 
 

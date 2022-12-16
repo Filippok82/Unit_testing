@@ -25,7 +25,8 @@ public class Product implements Comparable<Product> {
     }
 
     public int compareTo(Product product){
-        return this.getCost().compareTo(product.getCost());
+
+        return this.getCost()-product.getCost();
 
     }
 }
