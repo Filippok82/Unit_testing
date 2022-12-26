@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="assertj-core-3.23.1-javadoc">
+    <archive path="C:/Java/junit-jupiter-api-5.9.1.jar" />
+    <archive path="C:/Java/junit-jupiter-params-5.9.1.jar" />
+    <archive path="C:/Java/assertj-core-3.23.1.jar" />
+    <archive path="C:/Java/junit-platform-commons-1.9.1.jar" />
+  </library>
+  <library name="assertj-core-3.23.1">
+    <archive path="C:/Users/IrinaFil/IdeaProjects/unit_test_cw3/libs/assertj-core-3.23.1.jar" />
+  </library>
+  <library name="junit-jupiter-api-5.9.1">
+    <archive path="C:/Users/IrinaFil/IdeaProjects/unit_test_cw3/libs/junit-jupiter-api-5.9.1.jar" />
+  </library>
+  <library name="junit-jupiter-params-5.9.1">
+    <archive path="C:/Users/IrinaFil/IdeaProjects/unit_test_cw3/libs/junit-jupiter-params-5.9.1.jar" />
+  </library>
+  <library name="junit-platform-commons-1.9.1">
+    <archive path="C:/Users/IrinaFil/IdeaProjects/unit_test_cw3/libs/junit-platform-commons-1.9.1.jar" />
+  </library>
+</eclipse-userlibraries>
+
